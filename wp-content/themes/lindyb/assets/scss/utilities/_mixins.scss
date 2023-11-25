@@ -1,0 +1,39 @@
+@mixin breakpoint($breakpoint, $direction) {
+	@if map-has-key($map: $breakpoints, $key: $breakpoint) {
+		$breakpoint-value: map-get(
+			$map: $breakpoints,
+			$key: $breakpoint,
+		);
+		@if $direction == max {
+			@media (max-width: ($breakpoint-value - 1)) {
+				@content;
+			}
+		} @else if $direction == min {
+			@media (min-width: $breakpoint-value) {
+				@content;
+			}
+		} @else {
+			@media ($direction: $breakpoint-value) {
+				@content;
+			}
+		}
+	} @else {
+		@if $direction == max {
+			@media (max-width: $breakpoint) {
+				@content;
+			}
+		} @else if $direction == min {
+			@media (minwidth: $breakpoint) {
+				@content;
+			}
+		} @else {
+			@media ($direction: $breakpoint) {
+				@content;
+			}
+		}
+	}
+}
+
+@mixin transition-ease {
+	transition: all 0.2s ease-in-out;
+}

@@ -1,0 +1,31 @@
+.social {
+	&-container {
+		border-radius: 50%;
+		height: 50px;
+		width: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&:not(:last-of-type) {
+			margin-right: 1rem;
+		}
+	}
+	&-icon {
+		width: 20px;
+	}
+}
+.blurb {
+	&-icon {
+		width: 25px;
+		&_container {
+			border-radius: 50%;
+			height: 50px;
+			width: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid $primary-accent;
+			margin-bottom: 15px;
+		}
+	}
+}

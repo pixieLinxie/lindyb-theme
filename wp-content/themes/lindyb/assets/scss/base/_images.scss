@@ -1,0 +1,230 @@
+img,
+picture {
+	height: auto;
+}
+
+.image-radius .wp-post-image,
+.preview-container .wp-post-image {
+	border-radius: 1rem;
+}
+.image-radius .wp-post-image {
+	height: 500px;
+	object-fit: cover;
+}
+.preview-container .wp-post-image {
+	height: 200px;
+	object-fit: cover;
+}
+.image-gap:first-of-type {
+	padding-right: 0.5rem;
+}
+.image-gap:last-of-type {
+	padding-left: 0.5rem;
+}
+@media screen and (breakpoint(md)) {
+	.image-gap:first-of-type.image-gap-none,
+	.image-gap:last-of-type.image-gap-none {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.image-cover {
+		object-fit: cover;
+		height: 100%;
+	}
+	.image-radius-alt {
+		border-bottom-right-radius: 300px;
+		border-top-right-radius: 300px;
+		height: 350px;
+		width: 320px;
+		object-fit: cover;
+	}
+}
+@media screen and (breakpoint(lg)) {
+	.preview-container {
+		display: none;
+	}
+	.image-radius {
+		position: relative;
+		.wp-post-image {
+			position: absolute;
+			width: 400px;
+			top: -330px;
+			right: 0;
+			border-bottom-left-radius: 500px;
+			border-bottom-right-radius: 500px;
+			border-top-right-radius: 0;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			top: -330px;
+			right: 0;
+			width: 400px;
+			height: 300px;
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0) 80%);
+		}
+	}
+	.image-radius-alt {
+		width: 410px;
+	}
+}
+@media screen and (breakpoint(lg)) {
+	.atf-height {
+		.wp-post-image {
+			margin-left: auto;
+		}
+	}
+	.image-radius {
+		.wp-post-image {
+			height: 650px;
+			width: 450px;
+			top: -355px;
+		}
+		&:after {
+			top: -355px;
+			width: 450px;
+		}
+	}
+	.container-fluid {
+		@include transition-ease;
+		position: relative;
+		.preview-container {
+			display: block;
+			position: absolute;
+			z-index: z-index(above);
+			left: -100%;
+			@include transition-ease;
+			.wp-post-image {
+				width: 200px;
+				height: 350px;
+			}
+		}
+	}
+	.container-fluid:hover {
+		background-color: $grey-dark;
+		.link-post:hover {
+			.preview-container {
+				left: -44px;
+			}
+		}
+	}
+	.about-height {
+		min-height: 500px;
+	}
+	.image-radius-alt {
+		width: 510px;
+	}
+}
+
+.chameleon {
+	position: absolute;
+	top: -38px;
+	right: -8px;
+	width: auto;
+	height: 73px;
+	@media screen and (breakpoint(md)) {
+		right: 31px;
+	}
+	@media screen and (breakpoint(lg)) {
+		top: -44px;
+		right: 0;
+		height: 100px;
+	}
+	@media screen and (breakpoint(xl)) {
+		right: -51px;
+	}
+}
+.butterfly {
+	position: absolute;
+	top: -429px;
+	left: -9px;
+	width: auto;
+	height: 40px;
+	transform: rotate(-30deg);
+	@media screen and (breakpoint(md)) {
+		top: -284px;
+		left: -19px;
+	}
+	@media screen and (breakpoint(lg)) {
+		top: -210px;
+		left: 120px;
+	}
+	@media screen and (breakpoint(xl)) {
+		top: -166px;
+		left: -9px;
+	}
+}
+.ladybug {
+	position: absolute;
+	top: -5px;
+	left: 100px;
+	width: auto;
+	height: 25px;
+	transform: scaleX(-1);
+}
+.lindy-pixels {
+	position: absolute;
+	top: -49px;
+	left: 226px;
+	width: auto;
+	height: 102px;
+	@media screen and (breakpoint(md)) {
+		left: 247px;
+	}
+	@media screen and (breakpoint(lg)) {
+		top: -63px;
+		left: 523px;
+		height: 140px;
+	}
+	@media screen and (breakpoint(xl)) {
+		left: 504px;
+	}
+}
+.image-scroll {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
+	height: 324px;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	cursor: n-resize;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+	@media screen and (breakpoint(md)) {
+		height: 477px;
+	}
+	@media screen and (breakpoint(lg)) {
+		height: 630px;
+	}
+	@media screen and (breakpoint(xl)) {
+		height: 768px;
+	}
+}
+.single-post {
+	.post-header {
+		.wp-post-image {
+			position: absolute;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 1rem;
+			width: 100%;
+			z-index: 1;
+		}
+		&::after {
+			width: 100%;
+			height: 100%;
+			content: '';
+			position: absolute;
+			background-color: $primary-dark;
+			top: 0;
+			left: 0;
+			opacity: 0.8;
+			z-index: 2;
+		}
+		.h1-large,
+		.list-meta {
+			z-index: 3;
+		}
+	}
+}

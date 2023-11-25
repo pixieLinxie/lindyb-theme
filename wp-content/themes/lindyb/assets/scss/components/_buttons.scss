@@ -1,0 +1,14 @@
+.btn {
+	display: inline-block;
+	border: 1px solid;
+	border-radius: 3rem;
+	text-decoration: none;
+	padding: 0.5rem 1.5rem;
+	text-transform: uppercase;
+	font-weight: font-weight(bold);
+	@media screen and (min-width: breakpoint(md)) {
+		border: 2px solid;
+		cursor: pointer;
+		@include transition-ease;
+	}
+}

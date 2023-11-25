@@ -1,0 +1,17 @@
+.searchform {
+  .screen-reader-text:focus {
+    left: -130px;
+    padding: 10px 23px 10px;
+    top: 0;
+  }
+}
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}

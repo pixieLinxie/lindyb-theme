@@ -1,0 +1,192 @@
+body {
+	background-color: $primary-dark;
+	color: $primary-light;
+	::selection {
+		background-color: $primary-accent;
+		color: $primary-dark;
+	}
+}
+li::marker,
+button.menu-btn {
+	background-color: $primary-dark;
+	border: none;
+}
+li {
+	&::marker {
+		color: $primary-accent;
+	}
+}
+.menu-btn__burger {
+	background-color: $primary-accent;
+	&::before,
+	&::after {
+		background-color: $primary-accent;
+	}
+	&.open {
+		background: transparent;
+	}
+}
+.nav {
+	&.open {
+		background-color: $primary-dark;
+	}
+	.menu-item {
+		a {
+			color: $primary-light;
+		}
+		&::after {
+			background-color: $primary-accent;
+		}
+		&.active::after {
+			background-color: $primary-accent;
+		}
+	}
+}
+.fill {
+	&-primary {
+		fill: $primary-light;
+		@include transition-ease;
+	}
+	&-dark {
+		fill: $grey-dark;
+		@include transition-ease;
+	}
+	&-accent {
+		fill: $primary-accent;
+		@include transition-ease;
+	}
+}
+.stroke {
+	&-primary {
+		stroke: $primary-light;
+		@include transition-ease;
+	}
+	&-accent {
+		stroke: $primary-accent;
+		@include transition-ease;
+	}
+}
+h4,
+.h4 {
+	color: $primary-light;
+}
+h5,
+.h5 {
+	color: $primary-accent;
+}
+.portfolio {
+	&-button {
+		color: $primary-accent;
+	}
+	&-heading {
+		color: $primary-light;
+	}
+}
+.btn {
+	color: $primary-accent;
+}
+.link {
+	&-primary,
+	&-secondary {
+		color: $primary-accent;
+	}
+	&-post {
+		color: $primary-light;
+	}
+}
+@media screen and (breakpoint(xl)) {
+	.btn,
+	.link-primary,
+	.link-secondary {
+		@include transition-ease;
+	}
+	.link-primary {
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			background-color: $primary-accent;
+			width: 0;
+			height: 2px;
+			bottom: 0;
+			left: 0;
+			@include transition-ease;
+		}
+		&:hover::after {
+			width: 100%;
+		}
+	}
+	.link-secondary {
+		position: relative;
+		@include transition-ease;
+		display: block;
+		margin-bottom: 0.125rem;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 0;
+			height: 2px;
+			background-color: $primary-accent;
+			display: block;
+			@include transition-ease;
+		}
+		&:hover {
+			padding-left: 0.75rem;
+			&::after {
+				width: 5px;
+			}
+		}
+	}
+	.btn {
+		&:hover {
+			background-color: $primary-accent;
+			color: $primary-dark;
+		}
+	}
+}
+hr {
+	border-color: $grey-dark;
+}
+.border-accent {
+	border-color: $primary-accent;
+	opacity: 0.5;
+}
+.skills {
+	&-parent {
+		width: 100%;
+		&-li {
+			border: 1px solid $grey-dark;
+			background-color: $primary-accent;
+			.h5 {
+				color: $primary-dark;
+			}
+		}
+	}
+	&-child {
+		color: $primary-dark;
+	}
+}
+.social {
+	&-container {
+		border: 1px solid $grey-dark;
+		@include transition-ease;
+	}
+}
+
+@media screen and (breakpoint(xl)) {
+	.social-container:hover {
+		border: 1px solid $primary-accent;
+		.fill-dark {
+			fill: $primary-accent;
+		}
+	}
+}
+.primary-accent {
+	color: $primary-accent;
+}
+.rounded-border {
+	border: 1px solid $grey-dark;
+}

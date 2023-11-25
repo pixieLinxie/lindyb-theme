@@ -1,0 +1,10 @@
+@function font-weight($weight) {
+	@return map-get($map: $font-weights, $key: $weight);
+}
+@function z-index($index) {
+	@return map-get($map: $z-indexes, $key: $index);
+}
+@function breakpoint($width) {
+	@return map-get($map: $breakpoints, $key: $width);
+}
+

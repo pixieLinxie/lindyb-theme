@@ -1,0 +1,52 @@
+$primary-light: rgb(247, 247, 247);
+$primary-dark: rgb(26, 26, 26);
+$primary-dark-80: rgba(26, 26, 26, 0.8);
+$primary-accent: rgb(195, 238, 215);
+$grey-light: rgb(232, 232, 232);
+$grey-dark: rgb(50, 50, 50);
+$font-weights: (
+	'thin': 100,
+	'light': 300,
+	'regular': 400,
+	'semi-bold': 500,
+	'bold': 700,
+);
+$breakpoints: (
+	// 576px
+	'sm': unquote('min-width: 36em'),
+	// 768px
+	'md': unquote('min-width: 48em'),
+	// 1024px
+	'lg': unquote('min-width: 64em'),
+	// 1280px
+	'xl': unquote('min-width: 80em'),
+	// 1440px
+	'xxl': unquote('min-width: 90em'),
+	// 1600px
+	'xxxl': unquote('min-width: 100em'),
+	// 1920px
+	'xxxxl': unquote('min-width: 120em'),
+	// 2560px
+	'xxxxxl': unquote('min-width: 160em')
+);
+$z-indexes: (
+	'modal': 5000,
+	'dropdown': 4000,
+	'nav': 1000,
+	'default': 1,
+	'above': 2,
+	'below': 0,
+);
+$columns: 12;
+$gap: 2rem;
+$sides: (
+	't': 'top',
+	'b': 'bottom',
+	's': 'left',
+	'e': 'right',
+	'x': 'inline',
+	'y': 'block',
+);
+$display: (none, block, inline-block, inline, flex);
+$justify: (flex-start, center, flex-end, space-between, space-around, space-evenly);
+$align: (flex-start, center, flex-end);

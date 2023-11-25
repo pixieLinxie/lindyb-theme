@@ -1,0 +1,93 @@
+.position {
+	&-relative {
+		position: relative;
+	}
+	&-absolute {
+		position: absolute;
+	}
+	&-fixed {
+		position: fixed;
+	}
+}
+@each $z, $index in $z-indexes {
+	.z {
+		&-#{$z} {
+			z-index: z-index($z);
+		}
+	}
+}
+.overflow {
+	&-hidden-x {
+		overflow-x: hidden;
+	}
+}
+.ms-auto {
+	margin-inline-start: auto;
+}
+
+@for $i from 1 through 2 {
+	.order-#{$i} {
+		order: $i;
+	}
+}
+@each $s, $side in $sides {
+	@for $i from 0 through 5 {
+		.p {
+			&#{$s}-#{$i} {
+				padding-#{$side}: $i + rem;
+			}
+		}
+		.m {
+			&#{$s}-#{$i} {
+				margin-#{$side}: $i + rem;
+			}
+		}
+	}
+}
+@each $bp, $breakpoint in $breakpoints {
+	@media screen and (breakpoint(#{$bp})) {
+		@each $s, $side in $sides {
+			@for $i from 0 through 5 {
+				.p {
+					&#{$s}-#{$bp}-#{$i} {
+						padding-#{$side}: $i + rem;
+					}
+				}
+				.m {
+					&#{$s}-#{$bp}-#{$i} {
+						margin-#{$side}: $i + rem;
+					}
+				}
+			}
+		}
+		.position {
+			&-#{$bp}-relative {
+				position: relative;
+			}
+			&-#{$bp}-absolute {
+				position: absolute;
+			}
+			&-#{$bp}-fixed {
+				position: fixed;
+			}
+		}
+		@for $i from 1 through 2 {
+			.order-#{$bp}-#{$i} {
+				order: $i;
+			}
+		}
+	}
+}
+@media screen and (breakpoint(lg)) {
+	.side-heading {
+		margin-top: 0.5rem;
+	}
+	.atf-height {
+		min-height: 500px;
+	}
+}
+@media screen and (breakpoint(lg)) {
+	.atf-height {
+		min-height: 550px;
+	}
+}

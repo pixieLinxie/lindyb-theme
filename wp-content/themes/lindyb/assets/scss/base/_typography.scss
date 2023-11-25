@@ -1,0 +1,159 @@
+* {
+	font-family: 'Poppins', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+.text-large .btn code,
+pre,
+.h1,
+.h2,
+h1,
+h2 {
+	font-family: 'Roboto Slab', serif;
+	font-weight: font-weight(regular);
+}
+p,
+a,
+dd {
+	font-weight: font-weight(light);
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	line-height: 1.8;
+}
+ul {
+	margin-inline-start: 1rem;
+}
+li {
+	font-weight: font-weight(light);
+	font-size: 1rem;
+	line-height: 1.6;
+	@media screen and (breakpoint(md)) {
+		font-size: 0.9375rem;
+	}
+}
+strong,
+b {
+	font-weight: font-weight(semi-bold);
+}
+.btn {
+	font-size: 0.8rem;
+}
+mark {
+	background-color: transparent;
+	font-weight: font-weight(semi-bold);
+	color: $primary-accent;
+}
+small {
+	display: block;
+	font-size: 0.7rem;
+}
+.menu {
+	&-item a {
+		font-size: 1.2rem;
+	}
+}
+h1,
+.h1 {
+	font-size: 2.9rem;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+	&-large {
+		font-size: 3.9rem;
+		@media screen and (breakpoint(lg)) {
+			font-size: 5.9rem;
+		}
+	}
+}
+.post-header .h1-large {
+	font-size: 2.5rem;
+	@media screen and (breakpoint(lg)) {
+		font-size: 5.9rem;
+	}
+}
+h2,
+.h2 {
+	font-size: 2.2rem;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+}
+h3,
+.h3 {
+	font-size: 1.5rem;
+	line-height: 1.2;
+	margin-bottom: 1rem;
+}
+h4,
+.h4 {
+	font-size: 1rem;
+	line-height: 1.2;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-weight: font-weight(regular);
+	letter-spacing: 1.5px;
+	margin-bottom: 0;
+}
+dt {
+	font-size: 1rem;
+	line-height: 1.2;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-weight: font-weight(bold);
+	color: $primary-accent;
+	letter-spacing: 1.5px;
+	margin-bottom: 0;
+}
+h5,
+.h5 {
+	font-size: 1rem;
+	line-height: 1.2;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-weight: font-weight(bold);
+	letter-spacing: 1.5px;
+	margin-bottom: 0.5rem;
+}
+.text {
+	&-large {
+		font-size: 1.1rem;
+		margin-bottom: 1rem;
+	}
+	&-ultra {
+		font-size: 1.75rem;
+	}
+	&-uppercase {
+		text-transform: uppercase;
+	}
+	&-center {
+		text-align: center;
+	}
+}
+.list {
+	&-unstyled {
+		list-style: none;
+		padding-left: 0;
+		margin-inline-start: 0;
+	}
+	&-meta {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	@media screen and (breakpoint(lg)) {
+		&-meta {
+			justify-content: center;
+			li {
+				margin-right: 1rem;
+				&:not(:last-of-type)::after {
+					content: '|';
+					display: inline-block;
+					margin-left: 1rem;
+				}
+			}
+		}
+	}
+}
+.portfolio-heading {
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.5rem;
+}
