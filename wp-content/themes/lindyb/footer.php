@@ -3,7 +3,7 @@
   <div class="row">
     <div class="col-12 col-md-6">
       <h2>Get in touch</h2>
-      <p>I'd love to hear from you. You can reach me directly at <a class="link link-primary" href="mailto:hi@lindyb.com">hi@lindyb.com</a> or through LinkedIn. Thanks for stopping by!</p>
+      <p>I'd love to hear from you. You can reach me directly at <a class="link link-primary" href="mailto:hi@lindyb.co.za">hi@lindyb.co.za</a> or through LinkedIn. Thanks for stopping by!</p>
     </div>
     <div class="col-12 col-md-6 d-flex justify-center justify-md-flex-end align-center my-1">
       <a class="social-container" href="https://www.linkedin.com/in/lindybester/" target="_blank">
