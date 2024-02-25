@@ -60,7 +60,7 @@ if (have_posts()) {
       </section>
 
       <!-- Projects -->
-      <section class="container mt-5 pt-md-5">
+      <section class="container mt-5 py-md-5">
         <div class="row align-center">
           <div class="col-12">
             <h2>Explore my portfolio</h2>
@@ -116,39 +116,6 @@ if (have_posts()) {
           </div>
 
         </div>
-      </section>
-
-      <!-- Posts -->
-      <section>
-        <div class="container pt-md-5">
-          <hr class="mt-1 mb-3 d-md-none">
-          <div class="row mt-md-3">
-            <div class="col-12">
-              <h3 class="h2">Latest posts, musings and tutorials</h3>
-            </div>
-          </div>
-        </div>
-        <!-- Loop through latest posts, max 5 -->
-        <!-- create template, reused for posts and portfolio pieces -->
-        <?php
-        $blog = array(
-          'post_type' => 'post',
-          'posts_per_page' => 5,
-          'orderby'     => 'publish_date',
-          'order' => 'DESC',
-        );
-        $latest_post = new WP_Query($blog);
-        if ($latest_post->have_posts()) {
-
-          while ($latest_post->have_posts()) {
-            $latest_post->the_post();
-            echo get_template_part('inc/content');
-          }
-          wp_reset_postdata();
-        }
-        ?>
-        <!-- End post loop -->
-
       </section>
 
     </main>

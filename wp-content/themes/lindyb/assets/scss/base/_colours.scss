@@ -94,6 +94,18 @@ h5,
 		color: $primary-light;
 	}
 }
+.list-meta {
+	li {
+		background-color: $grey-dark;
+	}
+}
+@media screen and (breakpoint(lg)) {
+	.list-meta {
+		li {
+			background-color: transparent;
+		}
+	}
+}
 @media screen and (breakpoint(xl)) {
 	.btn,
 	.link-primary,
@@ -157,16 +169,15 @@ hr {
 .skills {
 	&-parent {
 		width: 100%;
-		&-li {
+		&-li .h5 {
 			border: 1px solid $grey-dark;
 			background-color: $primary-accent;
-			.h5 {
-				color: $primary-dark;
-			}
+			color: $primary-dark;
 		}
 	}
-	&-child {
-		color: $primary-dark;
+	&-child-li {
+		background-color: $grey-dark;
+		color: $primary-light;
 	}
 }
 .social {

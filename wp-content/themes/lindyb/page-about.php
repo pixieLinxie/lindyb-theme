@@ -91,7 +91,7 @@ if (have_posts()) {
 
                   // Loop through child skills and display their names
                   if (!empty($child_skills) && !is_wp_error($child_skills)) { ?>
-                    <ul class="skills-child list-unstyled d-md-flex justify-space-between d-lg-block">
+                    <ul class="skills-child list-unstyled d-md-flex">
                       <?php foreach ($child_skills as $child_skill) { ?>
                         <li class="skills-child-li"><?php echo $child_skill->name ?></li>
                       <?php } ?>
