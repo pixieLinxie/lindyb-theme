@@ -132,6 +132,7 @@ if (have_posts()) : while (have_posts()) : the_post();
           <hr class="my-2">
           <div class="row pt-5">
             <div class="col-12">
+              <div class="position-relative"><img class="clown-fish" src="<?php echo get_theme_file_uri('assets/img/clownfish.png') ?>" alt="clown-fish"></div>
               <h2 class="h2">Other projects</h2>
             </div>
           </div>

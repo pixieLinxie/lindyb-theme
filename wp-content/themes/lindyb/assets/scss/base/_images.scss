@@ -133,27 +133,34 @@ picture {
 		height: 100px;
 	}
 	@media screen and (breakpoint(xl)) {
-		right: -51px;
+		right: -4px;
+	}
+	&_about {
+		position: absolute;
+		top: 65px;
+		left: 111px;
+		width: auto;
+		height: 25px;
 	}
 }
 .butterfly {
 	position: absolute;
-	top: -429px;
-	left: -9px;
+	top: -406px;
+	left: 5px;
 	width: auto;
 	height: 40px;
 	transform: rotate(-30deg);
 	@media screen and (breakpoint(md)) {
-		top: -284px;
-		left: -19px;
+		top: -230px;
+		left: 76px;
 	}
 	@media screen and (breakpoint(lg)) {
-		top: -210px;
-		left: 120px;
+		top: -181px;
+		left: 162px;
 	}
 	@media screen and (breakpoint(xl)) {
-		top: -166px;
-		left: -9px;
+		top: -201px;
+		left: -3px;
 	}
 }
 .ladybug {
@@ -180,6 +187,63 @@ picture {
 	}
 	@media screen and (breakpoint(xl)) {
 		left: 504px;
+	}
+	&_home {
+		position: absolute;
+		height: 50px;
+		width: auto;
+		top: -20px;
+		left: 216px;
+	}
+}
+.oak-tree {
+	position: absolute;
+	width: auto;
+	height: 82px;
+	top: 4px;
+	left: 158px;
+	@media screen and (breakpoint(md)) {
+		left: 360px;
+	}
+	@media screen and (breakpoint(lg)) {
+		height: 100px;
+		top: 28px;
+		left: 569px;
+	}
+	&_home {
+		position: absolute;
+		height: 50px;
+		width: auto;
+		top: -18px;
+		left: 18px;
+	}
+}
+.salmon {
+	position: absolute;
+	height: 40px;
+	width: auto;
+	top: -22px;
+	left: 241px;
+}
+.clown-fish {
+	position: absolute;
+	height: 27px;
+	width: auto;
+	top: -30px;
+	left: 162px;
+	transform: rotate(-30deg);
+}
+
+.dove {
+	position: absolute;
+	height: 50px;
+	width: auto;
+	top: -29px;
+	left: 194px;
+	transform: scaleX(-1);
+	@media screen and (breakpoint(md)) {
+		left: -29px;
+		transform: scaleX(1);
 	}
 }
 .image-scroll {

@@ -2,6 +2,7 @@
   <hr class="mt-2 mb-3">
   <div class="row">
     <div class="col-12 col-md-6">
+      <div class="position-relative"><img class="dove" src="<?php echo get_theme_file_uri('assets/img/dove.png') ?>" alt="dove"></div>
       <h2>Get in touch</h2>
       <p>I'd love to hear from you. You can reach me directly at <a class="link link-primary" href="mailto:hi@lindyb.co.za">hi@lindyb.co.za</a> or through LinkedIn. Thanks for stopping by!</p>
     </div>

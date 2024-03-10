@@ -31,7 +31,7 @@ if (have_posts()) {
           <div class="col-12">
             <div class="position-relative"><img class="ladybug" src="<?php echo get_theme_file_uri('assets/img/ladybug.png') ?>" alt="ladybug"></div>
             <h2>My approach</h2>
-            <p class="text-large">I approach each project by understanding the audience, crafting a strategy, and implementing tailored digital solutions that meet the project goals and audience's needs.</p>
+            <p class="text-large">I approach each project by understanding the audience, crafting a strategy, and implementing tailored digital solutions that meet your business goals and audience's needs.</p>
             <!-- create meta boxes, loop through each -->
             <div class="row">
               <?php
@@ -57,6 +57,7 @@ if (have_posts()) {
       <!-- My skills -->
       <section class="container">
         <hr class="my-2">
+        <div class="position-relative"><img class="chameleon_about" src="<?php echo get_theme_file_uri('assets/img/chameleon.png') ?>" alt="chameleon"></div>
         <div class="row pt-5">
           <h2>My skills</h2>
           <p class="text-large">As a versatile professional, I bring together creativity, technical expertise, and a keen understanding of audience needs to craft engaging and impactful digital solutions. My diverse skill set ensures a holistic approach that drives success across every project.</p>
@@ -108,6 +109,7 @@ if (have_posts()) {
       <section class="container mt-5 pt-3">
         <div class="row">
           <div class="col-12">
+            <div class="position-relative"><img class="salmon" src="<?php echo get_theme_file_uri('assets/img/salmon.png') ?>" alt="salmon"></div>
             <h3 class="h2">My work history</h3>
           </div>
         </div>

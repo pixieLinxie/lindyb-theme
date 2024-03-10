@@ -35,11 +35,12 @@ if (have_posts()) {
       <section class="container pt-md-5">
         <div class="row">
           <div class="col-12">
+            <div class="position-relative"><img class="lindy-pixels_home" src="<?php echo get_theme_file_uri('assets/img/lindy-pixels.png') ?>" alt="lindy-pixels"></div>
             <h2><?php echo $about_heading ?></h2>
             <?php echo $about_content ?>
             <div class="d-flex justify-space-between">
               <!-- Loop through each of the Approach Fields from About Us page -->
-              <p class="text-large">I approach each project by understanding the audience, crafting a strategy, and implementing tailored digital solutions that meet the project goals and audience's needs.</p>
+              <!-- <p class="text-large">I approach each project by understanding the audience, crafting a strategy, and implementing tailored digital solutions that meet the project goals and audience's needs.</p> -->
               <?php
               foreach ($about_fields as $approach) {
                 $image_id = $approach['approach_field_image_id'];
@@ -63,6 +64,7 @@ if (have_posts()) {
       <section class="container mt-5 py-md-5">
         <div class="row align-center">
           <div class="col-12">
+            <div class="position-relative"><img class="oak-tree_home" src="<?php echo get_theme_file_uri('assets/img/oak-tree.png') ?>" alt="oak tree"></div>
             <h2>Explore my portfolio</h2>
             <p class="text-large">Welcome to my digital playground, where creativity and tech collide! From custom WordPress themes to beautiful graphics and more, my portfolio displays the best of my work. So, take a look around and see what I'm all about.</p>
             <a class="link link-primary d-inline-block" href="<?php echo get_site_url() ?>/portfolio">View all projects</a>

@@ -7,6 +7,7 @@ $archive_description = strip_tags($archive_description);
         <div class="container py-5">
             <div class="row">
                 <div class="col-12 text-center">
+                    <div class="position-relative"><img class="oak-tree" src="<?php echo get_theme_file_uri('assets/img/oak-tree.png') ?>" alt="oak tree"></div>
                     <h1 class="h1-large"><?php
                                             if (is_archive('portfolio') && !is_tax() && !is_category()) {
                                                 echo 'Portfolio';
